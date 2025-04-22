@@ -41,7 +41,7 @@ export default defineConfig((/* ctx */) => {
       },
     
       vueRouterMode: 'history', // available values: 'hash', 'history'
-      publicPath: '/', // ensures assets are served correctly from root
+      publicPath: '/',
     
       // Optional optimizations or debugging:
       // sourcemap: true, // uncomment if you want source maps for debugging
