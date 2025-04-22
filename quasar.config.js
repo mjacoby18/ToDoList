@@ -41,6 +41,7 @@ export default defineConfig((/* ctx */) => {
       },
 
       vueRouterMode: 'history', // available values: 'hash', 'history'
+      publicPath: '/',
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,
