@@ -36,34 +36,39 @@ export default defineConfig((/* ctx */) => {
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#build
     build: {
       target: {
-        browser: [ 'es2022', 'firefox115', 'chrome115', 'safari14' ],
+        browser: ['es2022', 'firefox115', 'chrome115', 'safari14'],
         node: 'node20'
       },
-
+    
       vueRouterMode: 'history', // available values: 'hash', 'history'
-      publicPath: '/',
+      publicPath: '/', // ensures assets are served correctly from root
+    
+      // Optional optimizations or debugging:
+      // sourcemap: true, // uncomment if you want source maps for debugging
+      // distDir: 'dist/spa', // default for SPA, can be set explicitly
+      // outDir: 'dist/spa', // same as above if needed in external tooling
+    
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,
-
+    
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
-
-      // publicPath: '/',
+    
       // analyze: true,
       // env: {},
       // rawDefine: {}
       // ignorePublicFolder: true,
       // minify: false,
       // polyfillModulePreload: true,
-      // distDir
-
+    
       // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},
-      
+    
       // vitePlugins: [
       //   [ 'package-name', { ..pluginOptions.. }, { server: true, client: true } ]
       // ]
     },
+    
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#devserver
     devServer: {
